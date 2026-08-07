@@ -6,6 +6,7 @@ struct car{
     std::string color;
 };
 void printcar(car car); 
+void betterprintcar(car &car);
 int main(){
     car car1;
     car1.make = "Toyota";
