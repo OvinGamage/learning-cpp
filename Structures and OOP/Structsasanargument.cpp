@@ -7,6 +7,7 @@ struct car{
 };
 void printcar(car car); 
 void betterprintcar(car &car);
+void paintcar(car &car,std::string color);
 int main(){
     car car1;
     car1.make = "Toyota";
@@ -19,7 +20,7 @@ int main(){
     car2.model = "Civic";
     car2.year = 2019;
     car2.color = "Blue";
-
+   paintcar(car1, "green");
    printcar(car1);
    betterprintcar(car2);
 
@@ -42,4 +43,11 @@ void betterprintcar(car &car){
     std::cout<<car.model<<std::endl;
     std::cout<<car.year<<std::endl;
     std::cout<<car.color<<std::endl;
+}
+void paintcar(car &car,std::string color){
+    //This function takes a struct as an argument and changes the color of the car. 
+    //Since the struct is passed by reference, the original struct is modified.
+    //For this function to work as intended, it is necessary to pass the struct by reference.
+    // If the struct was passed by value, the original struct would not be modified.
+    car.color=color;
 }
