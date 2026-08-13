@@ -17,6 +17,6 @@ class employee{
 };
 int main(){
     
-    employee person("Spongebob", "Male", "Fry Cook", 30);
-    std::cout << "Name: " << person.name << ", Gender: " << person.gender << ", Occupation: " << person.occupation << ", Age: " << person.age << std::endl;
+    employee person1("Spongebob", "Male", "Fry Cook", 30);
+    std::cout << "Name: " << person1.name << ", Gender: " << person1.gender << ", Occupation: " << person1.occupation << ", Age: " << person1.age << std::endl;
 }
