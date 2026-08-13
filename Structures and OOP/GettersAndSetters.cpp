@@ -4,12 +4,12 @@ private:
     double balance = 1000.0; // Private! Cannot be written to directly.
 
 public:
-    // Read-only access: Outside code can check balance, but cannot overwrite it
+    // Read-only access: Outside code can check balance, but cannot overwrite it(This is a getter method)
     double getBalance() const {
         return balance;
     }
 
-    // Controlled write access: Modifying balance requires explicit rules
+    // Controlled write access: Modifying balance requires explicit rules(This is a setter method)
     void deposit(double amount) {
         if (amount > 0) balance += amount;
     }
